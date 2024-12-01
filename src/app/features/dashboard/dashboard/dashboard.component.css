@@ -1,0 +1,13 @@
+.dashboard-container {
+  padding: 20px;
+
+  .next-appointments {
+    margin-top: 20px;
+
+    .appointments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+    }
+  }
+}

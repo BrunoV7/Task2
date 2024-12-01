@@ -11,6 +11,7 @@ export const meuhttpInterceptor: HttpInterceptorFn = (request, next) => {
     request = request.clone({
       setHeaders: { Authorization: 'Bearer ' + token },
     });
+    console.log(request);
   }
 
   return next(request).pipe(

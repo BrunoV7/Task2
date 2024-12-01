@@ -1,0 +1,15 @@
+<div class="dashboard-container">
+  <h1>Dashboard do Tutor</h1>
+
+  <section class="next-appointments">
+    <h2>Próximos Agendamentos</h2>
+    <div class="appointments-grid">
+      <app-card
+        *ngFor="let agendamento of proximosAgendamentos"
+        [title]="agendamento.descricao"
+      >
+        Data: {{ agendamento.dataAgendamento | date:'short' }}
+      </app-card>
+    </div>
+  </section>
+</div>

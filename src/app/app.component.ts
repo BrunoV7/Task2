@@ -1,6 +1,5 @@
 import {Component, Injectable} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {SidebarComponent} from './components/user/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
